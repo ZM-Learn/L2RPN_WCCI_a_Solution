@@ -1,10 +1,10 @@
 {
     "backend_type": "PandaPowerBackend_l2rpn_data_l2rpn_data",
     "chronics_max_timestep": "864",
-    "chronics_path": "D:\\Work\\l2rpn_wcci_discretized\\l2rpn_data\\chronics\\april_018",
+    "chronics_path": "D:\\Work\\l2rpn_wcci_zm\\l2rpn_data\\chronics\\april_018",
     "cumulative_reward": 42861.7890625,
     "env_seed": null,
     "env_type": "Environment_l2rpn_data",
-    "grid_path": "D:\\Work\\l2rpn_wcci_discretized\\l2rpn_data\\grid.json",
+    "grid_path": "D:\\Work\\l2rpn_wcci_zm\\l2rpn_data\\grid.json",
     "nb_timestep_played": 864
 }

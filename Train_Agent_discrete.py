@@ -20,26 +20,23 @@ from grid2op import make
 from grid2op.Reward import L2RPNReward
 
 
-EPISODES_train = 10000
+EPISODES_train = 3000
 epsilon = 0.9
 # os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 
 
 class A3CAgent:
-    def __init__(self, state_size, action_size, env_name):
+    def __init__(self, state_size, action_size):
         # get size of state and action
         self.state_size = state_size
         self.action_size = action_size
 
-        # get gym environment name
-        self.env_name = env_name
-
-        # these are hyper parameters for the A3C
+        # Hyper parameters
         self.actor_lr = 0.001 # previously 0.0001
         self.critic_lr = 0.05 # previously 0.0001
-        self.discount_factor = .7
+        self.discount_factor = 0.7
         self.hidden1, self.hidden2, self.hidden3 = 1000, 1000, 1000
-        self.threads = 2 # 48 or 16 or 32 - corresponds to parallel agents
+        self.threads = 16 # 48 or 16 or 32 - corresponds to parallel agents
 
         # create model for actor and critic network
         self.actor, self.critic = self.build_model()
@@ -54,8 +51,6 @@ class A3CAgent:
         
         K.set_session(self.sess) # tensorflow 1.X
         #tf.compat.v1.keras.backend.set_session(self.sess) # tensorflow 2.X
-        
-        
         #tf.compat.v1.disable_eager_execution() # compatibility issues due to tf 2.0
 
         
@@ -64,10 +59,7 @@ class A3CAgent:
 
         #self.sess.run(tf.compat.v1.global_variables_initializer())  # tensorflow 2.X
 
-    # approximate policy and value using Neural Network
-    # actor -> state is input and probability of each action is output of network
-    # critic -> state is input and value of state is output of network
-    # actor and critic network share first hidden layer
+
     def build_model(self):
         state = Input(batch_shape=(None,  self.state_size))
         shared = Dense(self.hidden1, input_dim=self.state_size, activation='relu', kernel_initializer='he_uniform')(state)
@@ -88,9 +80,8 @@ class A3CAgent:
         critic.summary()
 
         return actor, critic
-    # make loss function for Policy Gradient
-    # [log(action probability) * advantages] will be input for the back prop
-    # we add entropy of action probability to loss
+
+
     def actor_optimizer(self):
         action = K.placeholder(shape=(None, self.action_size))
         advantages = K.placeholder(shape=(None, ))
@@ -101,7 +92,7 @@ class A3CAgent:
         eligibility = K.log(good_prob + 1e-10) * K.stop_gradient(advantages) # 1e-10 to 1e-8
         loss = -K.sum(eligibility)
 
-        entropy = K.sum(policy * K.log(policy + 1e-10), axis=1)  # 1e-10 to 1e-8
+        entropy = K.sum(policy * K.log(policy + 1e-10), axis=1)  
 
         actor_loss = loss + 0.01*entropy
 
@@ -122,13 +113,6 @@ class A3CAgent:
         loss = K.mean(K.square(discounted_reward - value))
 
         optimizer = Adam(lr=self.critic_lr)
-        
-
-        # my debug
-        #tempout = K.placeholder(shape=(None, ))
-
-        #updates = optimizer.get_updates(self.critic.trainable_weights, [], loss)
-        #train = K.function([self.critic.input, discounted_reward], [], updates=updates)
         
         updates = optimizer.get_updates(params=self.critic.trainable_weights , loss=loss)
         train = K.function([self.critic.input, discounted_reward],[], updates=updates)
@@ -280,14 +264,14 @@ class Agent(threading.Thread):
                     if episode%10==0:
                         env.render()
                     
-                    self.train_episode(score < 2000000) # max score = 80000
+                    self.train_episode(score < 100) # always train 
                     break
                 
                 
                 if time_step % training_batch_size ==0:
                     print("Continue Thread:", self.index, "/ train episode: ", episode, "/ average score : ", int(score/time_step),
                           "/ with recent time:", time_step, "/ with recent action", action,"/ number of non-zero actions", non_zero_actions, "/ day_hour_min:", time_hour)
-                    self.train_episode(score < 2000000) # max score = 80000
+                    self.train_episode(score < 100)
                     print('saving memories...')
                     with open('self.states.txt', 'w') as filehandle:
                         for listitem in self.states:
@@ -343,57 +327,43 @@ class Agent(threading.Thread):
         roll = np.random.uniform()
         global epsilon
         if roll < epsilon:
-            num_random_explor = 15
+            num_random_explor = 1
             random_action_s = np.random.randint(self.action_size, size = num_random_explor)
-            epsilon = np.max([0.1,epsilon*0.995])
+            epsilon = np.max([0.03,epsilon*0.995])
+            '''
             obs_0, reward_nonaction, done_0, _  = state.simulate(env.action_space({}))
-            
-            reward_nonaction = 0.01+self.est_reward_update(obs_0, reward_nonaction, done_0)
+            reward_nonaction = 50 - reward_nonaction/100
+            reward_nonaction = 0.1+self.est_reward_update(obs_0, reward_nonaction, done_0)
             
             action_asclass = [None]*num_random_explor
             reward_simu = [None]*num_random_explor
             for i in range(num_random_explor):
                 action_asclass[i] = env.action_space({})
                 action_asclass[i].from_vect(actions_array[random_action_s[i],:])
-                obs_0, reward_simu[i], done_0, _  = state.simulate(action_asclass[i])
-                reward_simu[i] = self.est_reward_update(obs_0, reward_simu[i], done_0)
+                if env.action_space._is_legal(action_asclass[i], env):
+                    #print(env.action_space._is_legal(action_asclass[i], env))
+                    obs_0, reward_simu[i], done_0, _  = state.simulate(action_asclass[i])
+                    reward_simu[i] = 50 - reward_simu[i]/100
+                    reward_simu[i] = self.est_reward_update(obs_0, reward_simu[i], done_0)
+                else:
+                    reward_simu[i] = reward_nonaction
             
-            if np.max(reward_simu)<reward_nonaction:
+            if np.max(reward_simu)<reward_nonaction + 0.01:
                 random_action = 0
             else:
                 random_action = random_action_s[np.argmax([reward_simu])]
+            '''
+            random_action = random_action_s[0]
+            #random_action = random_action_s[0]
             
             return random_action # origin
         
         
         num_compared_action = 4
         policy_nn = self.actor.predict(np.reshape(self.get_usable_observation(state), [1, self.state_size]))[0] 
-        #indx = map(policy_nn.index, heapq.nlargest(num_compared_action, policy_nn))
         policy_chosen_list = np.argsort(policy_nn)[-1: -num_compared_action-1: -1]
-        policy_chosen_list[num_compared_action-1] = 0 # force no action inside decisions
-        #policy_nn_subid_mask = policy_nn * (1 - actions_array.dot((state[-14:]>0).astype(int))) 
-        # this masking prevents any illegal operation
-        
-        #print("policy_nn: ", policy_nn)
-        #print("actions_array.dot: ", actions_array.dot((state[-0:]>0).astype(int)))
-        
-        #policy_nn_subid_mask = policy_nn * (1 - actions_array.dot((state[-0:]>0).astype(int))) 
-        
-        
+        policy_chosen_list[num_compared_action-1] = 0 
 
-        #policy_chosen_list = np.random.choice(self.action_size, num_compared_action, replace=True,
-        #                                      p=policy_nn / sum(policy_nn))
-        
-        # sample 4 actions
-        
-        #print('probability:', policy_nn / sum(policy_nn) )
-        #print('policy_chosen_list', policy_chosen_list)
-        #policy_chosen_list = np.hstack((0, policy_chosen_list)) # adding no action option # comment this line as agent learns...
-        
-        #print("policy_chosen_list:", policy_chosen_list)
-        
-        #print("actions_array[policy_chosen_list[0],:] :", actions_array[policy_chosen_list[0],:])
-        
         action_asclass = [None]*num_compared_action
         reward_simu = [None]*num_compared_action
         for i in range(num_compared_action):
@@ -407,16 +377,85 @@ class Agent(threading.Thread):
                 reward_simu[i] += 0.1
                 
         
-        #policy_chosen = np.argsort(policy_nn)[0]
-        
-        
-        #policy_nn = self.actor.predict(np.reshape(self.get_usable_observation(state), [1, self.state_size]))[0] 
-        #policy_chosen = np.argsort(policy_nn)[0]
-        #return policy_chosen
-
-        #print("np.argmax([rw_0,rw_1,rw_2,rw_3]):",np.argmax([rw_0,rw_1,rw_2,rw_3]))
         return policy_chosen_list[np.argmax([reward_simu])] # origin
-        #return predicted_action
+
+
+        '''
+        num_compared_action = 2
+        policy_nn = self.actor.predict(np.reshape(self.get_usable_observation(state), [1, self.state_size]))[0] 
+        #indx = map(policy_nn.index, heapq.nlargest(num_compared_action, policy_nn))
+        policy_chosen_list = np.argsort(policy_nn)[-1: -num_compared_action-1: -1]
+        policy_chosen_list[num_compared_action-1] = 0 # force no action inside decisions
+
+        
+        action_asclass = [None]*num_compared_action
+        reward_simu = [None]*num_compared_action
+        for i in range(num_compared_action):
+            action_asclass[i] = env.action_space({})
+            action_asclass[i].from_vect(actions_array[policy_chosen_list[i],:])
+            state_temp = state
+            if env.action_space._is_legal(action_asclass[i], env):
+                obs_0, reward_simu[i], done_0, infos0  = state_temp.simulate(action_asclass[i])
+                reward_simu[i] = 20 - reward_simu[i]/500
+                reward_simu[i] = self.est_reward_update(obs_0, reward_simu[i], done_0)
+            else:
+                reward_simu[i] =-100
+            
+            if i == num_compared_action-1:
+                reward_simu[i] += 0.01
+        '''     
+        
+        '''
+        #policy_chosen = np.argsort(policy_nn)[0]
+        '''
+        '''
+        if np.max(reward_simu)< 0: # contingency
+            print(np.max(reward_simu))
+            additional_action = 10
+            policy_chosen_list = np.argsort(policy_nn)[-1: -additional_action-num_compared_action-1: -1]
+            
+            action_asclass = [None]*additional_action
+            reward_simu1 = [0]*additional_action
+            for i in range(additional_action):
+                action_asclass[i] = env.action_space({})
+                action_asclass[i].from_vect(actions_array[policy_chosen_list[num_compared_action+i],:])
+                obs_0, reward_simu1[i], done_0, _  = state.simulate(action_asclass[i])
+                reward_simu1[i] = 30-reward_simu[i]/500
+                reward_simu1[i] = self.est_reward_update(obs_0,reward_simu1[i],done_0)
+                if reward_simu1[i] > 0:
+                    return policy_chosen_list[num_compared_action+i] # origin
+                if np.max(reward_simu1)>np.max(reward_simu):
+                    return policy_chosen_list[num_compared_action+np.argmax([reward_simu1])] # origin
+        '''
+        
+        '''
+        # forced security verification, this is used for training the backup agent
+        if (done_ or sum(((( obs_.rho - 1) )[obs_.rho > 1.01]))>0) and np.random.uniform()<0.5:
+            reward_simu_ = 50-reward_simu_/150
+            reward_simu_ = self.est_reward_update(obs_, reward_simu_, done_)
+            #print(reward_simu_)
+            additional_action = 1007
+            policy_chosen_list = np.argsort(policy_nn)[-1: -additional_action-1: -1]
+            
+            action_asclass = [None]*additional_action
+            reward_simu1 = [0]*additional_action
+            for i in range(additional_action):
+                action_asclass[i] = env.action_space({})
+                action_asclass[i].from_vect(actions_array[policy_chosen_list[i],:])
+                obs_0, reward_simu1[i], done_0, _  = state.simulate(action_asclass[i])
+                reward_simu1[i] = 50-reward_simu1[i]/150
+                reward_simu1[i] = self.est_reward_update(obs_0,reward_simu1[i],done_0)
+                if (not done_0) and (sum(((( obs_0.rho - 1) )[obs_0.rho > 1.00]))==0):
+                    if i>20:
+                        print('this one not done', np.max(reward_simu1),reward_simu1[i], i,sum(((( obs_0.rho - 1) )[obs_0.rho > 1.01])) )
+                        
+                    return policy_chosen_list[i] # origin
+                
+            if np.max(reward_simu1)>reward_simu_:
+                print('has danger!', np.max(reward_simu1), reward_simu_)
+                return policy_chosen_list[np.argmax([reward_simu1])] # origin
+        
+        '''
 
 
     def est_reward_update(self,obs,rw,done): # penalizing overloaded lines
@@ -454,5 +493,5 @@ if __name__ == '__main__':
     actions_array = np.transpose(loaded['actions_array'])  # this has 157 actions
 
     env_name = "l2rpn_wcci_2020"
-    global_agent = A3CAgent(state_size, action_size, env_name)
+    global_agent = A3CAgent(state_size, action_size)
     global_agent.train()
