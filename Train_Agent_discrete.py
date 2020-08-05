@@ -24,6 +24,45 @@ EPISODES_train = 3000
 epsilon = 0.9
 # os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 
+'''
+class Critic_memory_buffer:
+    def __init__(self, max_size = 2000):
+        self.max_size = max_size
+        self.store_states = [None] * self.max_size  # is a list, other possible data structures might be a queue 
+        self.store_discounted_rewards = [None] * self.max_size
+        self.count = 0 
+        self.current = 0
+        
+        
+    def add(self, states, discounted_rewards):
+        self.store_states[self.current] = states
+        self.store_discounted_rewards[self.current] = discounted_rewards
+        
+        # for taking care of how many total frames have been inserted into the memory
+        self.count = max(self.count, self.current + 1)
+        
+        # increase the counter
+        self.current = (self.current + 1) % self.max_size
+        
+    def get_sample(self, index):
+        index = index % self.count
+            
+        return self.store_states[index], self.store_discounted_rewards[index]
+        
+    def get_minibatch(self, batch_size = 256, offset = 0):
+        
+        samples_state = []
+        samples_rewards = []
+        
+        while len(samples_state) < batch_size:
+            index = random.randint(0, self.count)
+            
+            state_, rewards_ = self.get_sample(index)
+            samples_state.append(state_)
+            samples_rewards.append(rewards_)
+            
+        return samples_state, samples_rewards
+'''
 
 class A3CAgent:
     def __init__(self, state_size, action_size):
@@ -76,8 +115,8 @@ class A3CAgent:
         actor._make_predict_function()
         critic._make_predict_function()
 
-        actor.summary()
-        critic.summary()
+        #actor.summary()
+        #critic.summary()
 
         return actor, critic
 
@@ -97,8 +136,6 @@ class A3CAgent:
         actor_loss = loss + 0.01*entropy
 
         optimizer = Adam(lr=self.actor_lr)
-        #updates = optimizer.get_updates(self.actor.trainable_weights, [], actor_loss)
-        #train = K.function([self.actor.input, action, advantages], [], updates=updates)
         
         updates = optimizer.get_updates(params=self.actor.trainable_weights,loss=actor_loss)
         train = K.function([self.actor.input, action, advantages],[], updates=updates)
@@ -121,19 +158,18 @@ class A3CAgent:
     # make agents(local) and start training
     def train(self):
         
-        print("Start training...")
+        print("Training...")
 
         try:
             self.load_model('pypow_wcci_a3c')
             print("Loaded saved NN model parameters \n")
         except:
-            print("No existing model is found or saved model sizes do not match - initializing random NN weights \n")
+            print("No existing model - initializing random NN weights \n")
         agents = [Agent(i, self.actor, self.critic, self.optimizer, self.env_name, self.discount_factor,
                         self.action_size, self.state_size) for i in range(self.threads)]
 
         for agent in agents:
             agent.start()
-
 
         while (len(scores) < EPISODES_train ):
             time.sleep(300) # main thread saves the model every 200 sec
@@ -152,7 +188,7 @@ class A3CAgent:
 
 # This is Agent(local) class for threading
 class Agent(threading.Thread):
-    def __init__(self, index, actor, critic, optimizer, env_name, discount_factor, action_size, state_size):
+    def __init__(self, index, actor, critic, optimizer, discount_factor, action_size, state_size):
         threading.Thread.__init__(self)
 
         self.states = []
@@ -163,18 +199,14 @@ class Agent(threading.Thread):
         self.actor = actor
         self.critic = critic
         self.optimizer = optimizer
-        self.env_name = env_name
         self.discount_factor = discount_factor
         self.action_size = action_size
         self.state_size = state_size
         
-        
-
     # Thread interactive with environment
     def run(self):
         global episode
         global episode_test
-        #env = grid2op.make() # env_name not used
 
         episode = 0
         print("Running an agent...")
@@ -225,8 +257,8 @@ class Agent(threading.Thread):
                 '''
                     
                 if done:
-                    score += -120 # this is the penalty for grid failure.
-                    self.memory( self.get_usable_observation(state), action, -120)
+                    score += -200 # this is the penalty for grid failure.
+                    self.memory( self.get_usable_observation(state), action, -200)
                     print("done at episode:", episode)
                     print(env.time_stamp)
                     print('power deficiency: ', np.sum(state.prod_p)-np.sum(state.load_p))
@@ -249,19 +281,19 @@ class Agent(threading.Thread):
                 
                 if done or time_step > time_step_end:
                     if done:
-                        print("----STOPPED Thread:", self.index, "/ train episode: ", episode, "/ average score : ", int(score/time_step),
-                              "/ with final time:", time_step, "/ with final action", action,
+                        print("----STOPPED Thread:", self.index, "/ episode: ", episode, "/ average score : ", int(score/time_step),
+                              "/ final time:", time_step, "/ final action", action,
                               "/ number of non-zero actions", non_zero_actions, "/ day_hour_min:", time_hour)
 
                     if time_step > time_step_end:
-                        print("End Thread:", self.index, "/ train episode: ", episode, "/ average score : ", int(score/time_step),
-                              "/ with final time:", time_step, "/ with final action", action,
+                        print("End Thread:", self.index, "/ episode: ", episode, "/ average score : ", int(score/time_step),
+                              "/ final time:", time_step, "/ final action", action,
                               "/ number of non-zero actions", non_zero_actions, "/ day_hour_min:", time_hour)
                     scores.append(score)
                     episode += 1
-                    print('exploration probability this episode', epsilon)
-                    print('time window length: ',env.chronics_handler.max_timestep())
-                    if episode%10==0:
+                    print('Exploration probability this episode', epsilon)
+                    print('Time window length: ',env.chronics_handler.max_timestep())
+                    if episode%30==0:
                         env.render()
                     
                     self.train_episode(score < 100) # always train 
@@ -269,22 +301,10 @@ class Agent(threading.Thread):
                 
                 
                 if time_step % training_batch_size ==0:
-                    print("Continue Thread:", self.index, "/ train episode: ", episode, "/ average score : ", int(score/time_step),
-                          "/ with recent time:", time_step, "/ with recent action", action,"/ number of non-zero actions", non_zero_actions, "/ day_hour_min:", time_hour)
+                    print("Continue Thread:", self.index, "/ episode: ", episode, "/ average score : ", int(score/time_step),
+                          "/ recent time:", time_step, "/ recent action", action,"/ number of non-zero actions", non_zero_actions, "/ day_hour_min:", time_hour)
                     self.train_episode(score < 100)
-                    print('saving memories...')
-                    with open('self.states.txt', 'w') as filehandle:
-                        for listitem in self.states:
-                            filehandle.write('%s\n' % listitem)
-                            
-                    with open('self.actions.txt', 'w') as filehandle:
-                        for listitem in self.actions:
-                            filehandle.write('%s\n' % listitem)
-
-                    with open('self.rewards.txt', 'w') as filehandle:
-                        for listitem in self.rewards:
-                            filehandle.write('%s\n' % listitem)
-
+                    
 
     # In Policy Gradient, Q function is not available.
     # Instead agent uses sample returns for evaluating policy
@@ -321,7 +341,32 @@ class Agent(threading.Thread):
         self.optimizer[1]([self.states, discounted_rewards])
         
         self.states, self.actions, self.rewards = [], [], []
+        
+        
+        '''
+    def train_episode(self, done):
+        discounted_rewards = self.discount_rewards(self.rewards, done)
 
+        values = self.critic.predict(np.array(self.states))
+        values = np.reshape(values, len(values))
+
+        advantages = discounted_rewards - values
+        
+        # memory replay for critic
+        for i_samples in range(len(values)):
+            self.Critic_memory.add(self.states[i_samples], discounted_rewards[i_samples])
+        
+        sampled_staets, sampled_values = self.Critic_memory.get_minibatch()
+                
+        print('Training actor with advantages:', np.mean(np.abs(advantages)))
+        self.optimizer[0]([self.states, self.actions, advantages])
+        
+        print('Training critic with sampled memory')
+        self.optimizer[1]([sampled_staets, sampled_values])
+        
+        self.states, self.actions, self.rewards = [], [], []
+        
+        '''
 
     def get_action(self, env, state):
         roll = np.random.uniform()
@@ -463,7 +508,7 @@ class Agent(threading.Thread):
         
         state_obs = obs
         rw_0 = rw - 50 * sum(((( state_obs.rho - 1) )[
-                        state_obs.rho > 1])) if not done else -120
+                        state_obs.rho > 1])) if not done else -200
         return rw_0
     
     
@@ -490,7 +535,7 @@ if __name__ == '__main__':
     scores = []
     #actions_array
     loaded = np.load('actions_array.npz')
-    actions_array = np.transpose(loaded['actions_array'])  # this has 157 actions
+    actions_array = np.transpose(loaded['actions_array']) 
 
     env_name = "l2rpn_wcci_2020"
     global_agent = A3CAgent(state_size, action_size)
