@@ -1,0 +1,10 @@
+{
+    "backend_type": "PandaPowerBackend_l2rpn_data_l2rpn_data",
+    "chronics_max_timestep": "8062",
+    "chronics_path": "D:\\Work\\l2rpn_wcci_starting_kit_Continue_big_action_space\\l2rpn_data\\chronics\\Scenario_december_017",
+    "cumulative_reward": 37918.7421875,
+    "env_seed": null,
+    "env_type": "Environment_l2rpn_data",
+    "grid_path": "D:\\Work\\l2rpn_wcci_starting_kit_Continue_big_action_space\\l2rpn_data\\grid.json",
+    "nb_timestep_played": 829
+}

@@ -1,0 +1,1 @@
+command: python $program/scoring.py --logs_in $input/res --config_in $program/config_1.json --data_out $output --key_score grid_operation_cost --gif_episode november_46 --gif_start 120 --gif_end 170

@@ -1,0 +1,2594 @@
+[
+    {
+        "tmp_score_codalab": 423.642578125
+    },
+    {
+        "tmp_score_codalab": 420.22216796875
+    },
+    {
+        "tmp_score_codalab": 424.05517578125
+    },
+    {
+        "tmp_score_codalab": 397.37060546875
+    },
+    {
+        "tmp_score_codalab": 380.048828125
+    },
+    {
+        "tmp_score_codalab": 365.234375
+    },
+    {
+        "tmp_score_codalab": 350.927734375
+    },
+    {
+        "tmp_score_codalab": 340.0830078125
+    },
+    {
+        "tmp_score_codalab": 338.24462890625
+    },
+    {
+        "tmp_score_codalab": 320.791015625
+    },
+    {
+        "tmp_score_codalab": 308.53759765625
+    },
+    {
+        "tmp_score_codalab": 305.2099609375
+    },
+    {
+        "tmp_score_codalab": 292.568359375
+    },
+    {
+        "tmp_score_codalab": 285.2734375
+    },
+    {
+        "tmp_score_codalab": 274.959716796875
+    },
+    {
+        "tmp_score_codalab": 273.4912109375
+    },
+    {
+        "tmp_score_codalab": 285.13427734375
+    },
+    {
+        "tmp_score_codalab": 276.69921875
+    },
+    {
+        "tmp_score_codalab": 284.35302734375
+    },
+    {
+        "tmp_score_codalab": 278.433837890625
+    },
+    {
+        "tmp_score_codalab": 268.453369140625
+    },
+    {
+        "tmp_score_codalab": 261.62109375
+    },
+    {
+        "tmp_score_codalab": 269.957275390625
+    },
+    {
+        "tmp_score_codalab": 261.612548828125
+    },
+    {
+        "tmp_score_codalab": 265.06103515625
+    },
+    {
+        "tmp_score_codalab": 262.001953125
+    },
+    {
+        "tmp_score_codalab": 264.26513671875
+    },
+    {
+        "tmp_score_codalab": 278.055419921875
+    },
+    {
+        "tmp_score_codalab": 280.552978515625
+    },
+    {
+        "tmp_score_codalab": 289.013671875
+    },
+    {
+        "tmp_score_codalab": 290.255126953125
+    },
+    {
+        "tmp_score_codalab": 289.1748046875
+    },
+    {
+        "tmp_score_codalab": 281.2255859375
+    },
+    {
+        "tmp_score_codalab": 282.535400390625
+    },
+    {
+        "tmp_score_codalab": 273.023681640625
+    },
+    {
+        "tmp_score_codalab": 261.173095703125
+    },
+    {
+        "tmp_score_codalab": 277.852783203125
+    },
+    {
+        "tmp_score_codalab": 291.93115234375
+    },
+    {
+        "tmp_score_codalab": 272.44140625
+    },
+    {
+        "tmp_score_codalab": 261.932373046875
+    },
+    {
+        "tmp_score_codalab": 263.004150390625
+    },
+    {
+        "tmp_score_codalab": 273.597412109375
+    },
+    {
+        "tmp_score_codalab": 267.0458984375
+    },
+    {
+        "tmp_score_codalab": 268.980712890625
+    },
+    {
+        "tmp_score_codalab": 285.09765625
+    },
+    {
+        "tmp_score_codalab": 277.1533203125
+    },
+    {
+        "tmp_score_codalab": 277.13134765625
+    },
+    {
+        "tmp_score_codalab": 278.907470703125
+    },
+    {
+        "tmp_score_codalab": 272.57080078125
+    },
+    {
+        "tmp_score_codalab": 283.0517578125
+    },
+    {
+        "tmp_score_codalab": 267.357177734375
+    },
+    {
+        "tmp_score_codalab": 262.896728515625
+    },
+    {
+        "tmp_score_codalab": 273.26171875
+    },
+    {
+        "tmp_score_codalab": 279.19189453125
+    },
+    {
+        "tmp_score_codalab": 293.133544921875
+    },
+    {
+        "tmp_score_codalab": 292.32421875
+    },
+    {
+        "tmp_score_codalab": 268.187255859375
+    },
+    {
+        "tmp_score_codalab": 268.53271484375
+    },
+    {
+        "tmp_score_codalab": 270.0830078125
+    },
+    {
+        "tmp_score_codalab": 258.8623046875
+    },
+    {
+        "tmp_score_codalab": 266.314697265625
+    },
+    {
+        "tmp_score_codalab": 271.065673828125
+    },
+    {
+        "tmp_score_codalab": 278.232421875
+    },
+    {
+        "tmp_score_codalab": 279.486083984375
+    },
+    {
+        "tmp_score_codalab": 263.072509765625
+    },
+    {
+        "tmp_score_codalab": 260.118408203125
+    },
+    {
+        "tmp_score_codalab": 261.39404296875
+    },
+    {
+        "tmp_score_codalab": 267.589111328125
+    },
+    {
+        "tmp_score_codalab": 264.862060546875
+    },
+    {
+        "tmp_score_codalab": 265.7861328125
+    },
+    {
+        "tmp_score_codalab": 252.53173828125
+    },
+    {
+        "tmp_score_codalab": 254.813232421875
+    },
+    {
+        "tmp_score_codalab": 254.188232421875
+    },
+    {
+        "tmp_score_codalab": 253.86474609375
+    },
+    {
+        "tmp_score_codalab": 261.033935546875
+    },
+    {
+        "tmp_score_codalab": 250.8935546875
+    },
+    {
+        "tmp_score_codalab": 252.784423828125
+    },
+    {
+        "tmp_score_codalab": 249.00390625
+    },
+    {
+        "tmp_score_codalab": 245.5908203125
+    },
+    {
+        "tmp_score_codalab": 250.843505859375
+    },
+    {
+        "tmp_score_codalab": 258.428955078125
+    },
+    {
+        "tmp_score_codalab": 249.716796875
+    },
+    {
+        "tmp_score_codalab": 238.524169921875
+    },
+    {
+        "tmp_score_codalab": 245.29541015625
+    },
+    {
+        "tmp_score_codalab": 235.623779296875
+    },
+    {
+        "tmp_score_codalab": 243.079833984375
+    },
+    {
+        "tmp_score_codalab": 236.273193359375
+    },
+    {
+        "tmp_score_codalab": 225.516357421875
+    },
+    {
+        "tmp_score_codalab": 221.25
+    },
+    {
+        "tmp_score_codalab": 222.43896484375
+    },
+    {
+        "tmp_score_codalab": 218.0224609375
+    },
+    {
+        "tmp_score_codalab": 210.52978515625
+    },
+    {
+        "tmp_score_codalab": 206.455078125
+    },
+    {
+        "tmp_score_codalab": 200.20751953125
+    },
+    {
+        "tmp_score_codalab": 195.8349609375
+    },
+    {
+        "tmp_score_codalab": 190.6494140625
+    },
+    {
+        "tmp_score_codalab": 189.365234375
+    },
+    {
+        "tmp_score_codalab": 184.68994140625
+    },
+    {
+        "tmp_score_codalab": 183.37646484375
+    },
+    {
+        "tmp_score_codalab": 180.01220703125
+    },
+    {
+        "tmp_score_codalab": 177.66845703125
+    },
+    {
+        "tmp_score_codalab": 179.02587890625
+    },
+    {
+        "tmp_score_codalab": 171.6845703125
+    },
+    {
+        "tmp_score_codalab": 170.0
+    },
+    {
+        "tmp_score_codalab": 167.16064453125
+    },
+    {
+        "tmp_score_codalab": 162.6513671875
+    },
+    {
+        "tmp_score_codalab": 162.470703125
+    },
+    {
+        "tmp_score_codalab": 166.09375
+    },
+    {
+        "tmp_score_codalab": 158.27880859375
+    },
+    {
+        "tmp_score_codalab": 159.6533203125
+    },
+    {
+        "tmp_score_codalab": 163.10791015625
+    },
+    {
+        "tmp_score_codalab": 161.94091796875
+    },
+    {
+        "tmp_score_codalab": 160.361328125
+    },
+    {
+        "tmp_score_codalab": 160.8935546875
+    },
+    {
+        "tmp_score_codalab": 159.54833984375
+    },
+    {
+        "tmp_score_codalab": 161.142578125
+    },
+    {
+        "tmp_score_codalab": 162.49755859375
+    },
+    {
+        "tmp_score_codalab": 162.16552734375
+    },
+    {
+        "tmp_score_codalab": 160.3759765625
+    },
+    {
+        "tmp_score_codalab": 156.58447265625
+    },
+    {
+        "tmp_score_codalab": 157.78076171875
+    },
+    {
+        "tmp_score_codalab": 163.4765625
+    },
+    {
+        "tmp_score_codalab": 161.533203125
+    },
+    {
+        "tmp_score_codalab": 159.71435546875
+    },
+    {
+        "tmp_score_codalab": 155.48095703125
+    },
+    {
+        "tmp_score_codalab": 157.3974609375
+    },
+    {
+        "tmp_score_codalab": 155.96923828125
+    },
+    {
+        "tmp_score_codalab": 154.6533203125
+    },
+    {
+        "tmp_score_codalab": 155.2685546875
+    },
+    {
+        "tmp_score_codalab": 154.74365234375
+    },
+    {
+        "tmp_score_codalab": 151.70654296875
+    },
+    {
+        "tmp_score_codalab": 149.43115234375
+    },
+    {
+        "tmp_score_codalab": 147.05810546875
+    },
+    {
+        "tmp_score_codalab": 146.77001953125
+    },
+    {
+        "tmp_score_codalab": 147.666015625
+    },
+    {
+        "tmp_score_codalab": 143.47900390625
+    },
+    {
+        "tmp_score_codalab": 141.64794921875
+    },
+    {
+        "tmp_score_codalab": 139.9267578125
+    },
+    {
+        "tmp_score_codalab": 140.5126953125
+    },
+    {
+        "tmp_score_codalab": 141.6796875
+    },
+    {
+        "tmp_score_codalab": 141.03271484375
+    },
+    {
+        "tmp_score_codalab": 140.91552734375
+    },
+    {
+        "tmp_score_codalab": 143.0029296875
+    },
+    {
+        "tmp_score_codalab": 139.6923828125
+    },
+    {
+        "tmp_score_codalab": 143.6279296875
+    },
+    {
+        "tmp_score_codalab": 142.55859375
+    },
+    {
+        "tmp_score_codalab": 149.56787109375
+    },
+    {
+        "tmp_score_codalab": 145.7568359375
+    },
+    {
+        "tmp_score_codalab": 145.24658203125
+    },
+    {
+        "tmp_score_codalab": 149.86083984375
+    },
+    {
+        "tmp_score_codalab": 157.83935546875
+    },
+    {
+        "tmp_score_codalab": 167.97607421875
+    },
+    {
+        "tmp_score_codalab": 158.23486328125
+    },
+    {
+        "tmp_score_codalab": 157.0947265625
+    },
+    {
+        "tmp_score_codalab": 148.0615234375
+    },
+    {
+        "tmp_score_codalab": 158.6865234375
+    },
+    {
+        "tmp_score_codalab": 163.61083984375
+    },
+    {
+        "tmp_score_codalab": 154.90234375
+    },
+    {
+        "tmp_score_codalab": 147.18017578125
+    },
+    {
+        "tmp_score_codalab": 153.57177734375
+    },
+    {
+        "tmp_score_codalab": 155.57373046875
+    },
+    {
+        "tmp_score_codalab": 162.36572265625
+    },
+    {
+        "tmp_score_codalab": 157.98828125
+    },
+    {
+        "tmp_score_codalab": 153.39599609375
+    },
+    {
+        "tmp_score_codalab": 170.08056640625
+    },
+    {
+        "tmp_score_codalab": 162.900390625
+    },
+    {
+        "tmp_score_codalab": 169.716796875
+    },
+    {
+        "tmp_score_codalab": 168.8671875
+    },
+    {
+        "tmp_score_codalab": 172.98828125
+    },
+    {
+        "tmp_score_codalab": 166.5966796875
+    },
+    {
+        "tmp_score_codalab": 168.73291015625
+    },
+    {
+        "tmp_score_codalab": 175.634765625
+    },
+    {
+        "tmp_score_codalab": 167.65625
+    },
+    {
+        "tmp_score_codalab": 167.3681640625
+    },
+    {
+        "tmp_score_codalab": 168.9013671875
+    },
+    {
+        "tmp_score_codalab": 177.37548828125
+    },
+    {
+        "tmp_score_codalab": 177.2216796875
+    },
+    {
+        "tmp_score_codalab": 178.271484375
+    },
+    {
+        "tmp_score_codalab": 182.1435546875
+    },
+    {
+        "tmp_score_codalab": 172.7783203125
+    },
+    {
+        "tmp_score_codalab": 182.18017578125
+    },
+    {
+        "tmp_score_codalab": 175.85205078125
+    },
+    {
+        "tmp_score_codalab": 176.171875
+    },
+    {
+        "tmp_score_codalab": 181.63330078125
+    },
+    {
+        "tmp_score_codalab": 176.3037109375
+    },
+    {
+        "tmp_score_codalab": 179.13818359375
+    },
+    {
+        "tmp_score_codalab": 177.74169921875
+    },
+    {
+        "tmp_score_codalab": 180.244140625
+    },
+    {
+        "tmp_score_codalab": 182.48779296875
+    },
+    {
+        "tmp_score_codalab": 179.75830078125
+    },
+    {
+        "tmp_score_codalab": 180.712890625
+    },
+    {
+        "tmp_score_codalab": 182.81982421875
+    },
+    {
+        "tmp_score_codalab": 183.076171875
+    },
+    {
+        "tmp_score_codalab": 179.169921875
+    },
+    {
+        "tmp_score_codalab": 186.30859375
+    },
+    {
+        "tmp_score_codalab": 181.34521484375
+    },
+    {
+        "tmp_score_codalab": 182.2216796875
+    },
+    {
+        "tmp_score_codalab": 190.04638671875
+    },
+    {
+        "tmp_score_codalab": 193.623046875
+    },
+    {
+        "tmp_score_codalab": 184.84619140625
+    },
+    {
+        "tmp_score_codalab": 193.39111328125
+    },
+    {
+        "tmp_score_codalab": 206.728515625
+    },
+    {
+        "tmp_score_codalab": 196.25732421875
+    },
+    {
+        "tmp_score_codalab": 189.62890625
+    },
+    {
+        "tmp_score_codalab": 194.27734375
+    },
+    {
+        "tmp_score_codalab": 215.19775390625
+    },
+    {
+        "tmp_score_codalab": 232.666015625
+    },
+    {
+        "tmp_score_codalab": 230.849609375
+    },
+    {
+        "tmp_score_codalab": 247.60009765625
+    },
+    {
+        "tmp_score_codalab": 247.04345703125
+    },
+    {
+        "tmp_score_codalab": 255.7470703125
+    },
+    {
+        "tmp_score_codalab": 268.33984375
+    },
+    {
+        "tmp_score_codalab": 266.35498046875
+    },
+    {
+        "tmp_score_codalab": 275.09765625
+    },
+    {
+        "tmp_score_codalab": 289.7314453125
+    },
+    {
+        "tmp_score_codalab": 316.60400390625
+    },
+    {
+        "tmp_score_codalab": 314.2724609375
+    },
+    {
+        "tmp_score_codalab": 318.759765625
+    },
+    {
+        "tmp_score_codalab": 335.57373046875
+    },
+    {
+        "tmp_score_codalab": 362.35107421875
+    },
+    {
+        "tmp_score_codalab": 379.70947265625
+    },
+    {
+        "tmp_score_codalab": 397.158203125
+    },
+    {
+        "tmp_score_codalab": 405.357666015625
+    },
+    {
+        "tmp_score_codalab": 404.361572265625
+    },
+    {
+        "tmp_score_codalab": 402.96142578125
+    },
+    {
+        "tmp_score_codalab": 386.025390625
+    },
+    {
+        "tmp_score_codalab": 364.212646484375
+    },
+    {
+        "tmp_score_codalab": 363.46923828125
+    },
+    {
+        "tmp_score_codalab": 358.828125
+    },
+    {
+        "tmp_score_codalab": 364.94384765625
+    },
+    {
+        "tmp_score_codalab": 367.0361328125
+    },
+    {
+        "tmp_score_codalab": 371.221923828125
+    },
+    {
+        "tmp_score_codalab": 367.76123046875
+    },
+    {
+        "tmp_score_codalab": 367.93212890625
+    },
+    {
+        "tmp_score_codalab": 355.8935546875
+    },
+    {
+        "tmp_score_codalab": 348.5107421875
+    },
+    {
+        "tmp_score_codalab": 348.55224609375
+    },
+    {
+        "tmp_score_codalab": 347.72216796875
+    },
+    {
+        "tmp_score_codalab": 347.61962890625
+    },
+    {
+        "tmp_score_codalab": 360.0634765625
+    },
+    {
+        "tmp_score_codalab": 379.86572265625
+    },
+    {
+        "tmp_score_codalab": 393.39599609375
+    },
+    {
+        "tmp_score_codalab": 386.796875
+    },
+    {
+        "tmp_score_codalab": 382.84912109375
+    },
+    {
+        "tmp_score_codalab": 387.68798828125
+    },
+    {
+        "tmp_score_codalab": 395.71533203125
+    },
+    {
+        "tmp_score_codalab": 407.48046875
+    },
+    {
+        "tmp_score_codalab": 417.73681640625
+    },
+    {
+        "tmp_score_codalab": 419.35302734375
+    },
+    {
+        "tmp_score_codalab": 418.23486328125
+    },
+    {
+        "tmp_score_codalab": 420.4150390625
+    },
+    {
+        "tmp_score_codalab": 429.49951171875
+    },
+    {
+        "tmp_score_codalab": 417.91259765625
+    },
+    {
+        "tmp_score_codalab": 431.05712890625
+    },
+    {
+        "tmp_score_codalab": 446.3232421875
+    },
+    {
+        "tmp_score_codalab": 439.931640625
+    },
+    {
+        "tmp_score_codalab": 407.177734375
+    },
+    {
+        "tmp_score_codalab": 389.39697265625
+    },
+    {
+        "tmp_score_codalab": 358.42529296875
+    },
+    {
+        "tmp_score_codalab": 337.05322265625
+    },
+    {
+        "tmp_score_codalab": 328.6376953125
+    },
+    {
+        "tmp_score_codalab": 312.3583984375
+    },
+    {
+        "tmp_score_codalab": 301.50146484375
+    },
+    {
+        "tmp_score_codalab": 296.197509765625
+    },
+    {
+        "tmp_score_codalab": 309.49951171875
+    },
+    {
+        "tmp_score_codalab": 319.66064453125
+    },
+    {
+        "tmp_score_codalab": 320.084228515625
+    },
+    {
+        "tmp_score_codalab": 322.92724609375
+    },
+    {
+        "tmp_score_codalab": 321.6015625
+    },
+    {
+        "tmp_score_codalab": 322.232666015625
+    },
+    {
+        "tmp_score_codalab": 324.930419921875
+    },
+    {
+        "tmp_score_codalab": 315.103759765625
+    },
+    {
+        "tmp_score_codalab": 328.8232421875
+    },
+    {
+        "tmp_score_codalab": 325.712890625
+    },
+    {
+        "tmp_score_codalab": 332.318115234375
+    },
+    {
+        "tmp_score_codalab": 315.369873046875
+    },
+    {
+        "tmp_score_codalab": 307.2509765625
+    },
+    {
+        "tmp_score_codalab": 310.543212890625
+    },
+    {
+        "tmp_score_codalab": 317.086181640625
+    },
+    {
+        "tmp_score_codalab": 332.860107421875
+    },
+    {
+        "tmp_score_codalab": 340.48095703125
+    },
+    {
+        "tmp_score_codalab": 347.568359375
+    },
+    {
+        "tmp_score_codalab": 350.7763671875
+    },
+    {
+        "tmp_score_codalab": 347.71240234375
+    },
+    {
+        "tmp_score_codalab": 354.37255859375
+    },
+    {
+        "tmp_score_codalab": 346.80908203125
+    },
+    {
+        "tmp_score_codalab": 344.9560546875
+    },
+    {
+        "tmp_score_codalab": 345.396728515625
+    },
+    {
+        "tmp_score_codalab": 346.475830078125
+    },
+    {
+        "tmp_score_codalab": 327.352294921875
+    },
+    {
+        "tmp_score_codalab": 325.487060546875
+    },
+    {
+        "tmp_score_codalab": 324.002685546875
+    },
+    {
+        "tmp_score_codalab": 323.306884765625
+    },
+    {
+        "tmp_score_codalab": 316.094970703125
+    },
+    {
+        "tmp_score_codalab": 316.37451171875
+    },
+    {
+        "tmp_score_codalab": 300.4736328125
+    },
+    {
+        "tmp_score_codalab": 298.818359375
+    },
+    {
+        "tmp_score_codalab": 300.946044921875
+    },
+    {
+        "tmp_score_codalab": 289.14794921875
+    },
+    {
+        "tmp_score_codalab": 280.04638671875
+    },
+    {
+        "tmp_score_codalab": 271.458740234375
+    },
+    {
+        "tmp_score_codalab": 265.582275390625
+    },
+    {
+        "tmp_score_codalab": 260.030517578125
+    },
+    {
+        "tmp_score_codalab": 254.066162109375
+    },
+    {
+        "tmp_score_codalab": 259.097900390625
+    },
+    {
+        "tmp_score_codalab": 267.81494140625
+    },
+    {
+        "tmp_score_codalab": 273.8232421875
+    },
+    {
+        "tmp_score_codalab": 263.74267578125
+    },
+    {
+        "tmp_score_codalab": 265.85205078125
+    },
+    {
+        "tmp_score_codalab": 270.44677734375
+    },
+    {
+        "tmp_score_codalab": 270.997314453125
+    },
+    {
+        "tmp_score_codalab": 275.001220703125
+    },
+    {
+        "tmp_score_codalab": 264.141845703125
+    },
+    {
+        "tmp_score_codalab": 254.395751953125
+    },
+    {
+        "tmp_score_codalab": 257.423095703125
+    },
+    {
+        "tmp_score_codalab": 261.3818359375
+    },
+    {
+        "tmp_score_codalab": 255.660400390625
+    },
+    {
+        "tmp_score_codalab": 267.10205078125
+    },
+    {
+        "tmp_score_codalab": 276.182861328125
+    },
+    {
+        "tmp_score_codalab": 297.947998046875
+    },
+    {
+        "tmp_score_codalab": 317.060546875
+    },
+    {
+        "tmp_score_codalab": 306.470947265625
+    },
+    {
+        "tmp_score_codalab": 312.38037109375
+    },
+    {
+        "tmp_score_codalab": 310.38330078125
+    },
+    {
+        "tmp_score_codalab": 301.07666015625
+    },
+    {
+        "tmp_score_codalab": 283.809814453125
+    },
+    {
+        "tmp_score_codalab": 290.7275390625
+    },
+    {
+        "tmp_score_codalab": 283.22998046875
+    },
+    {
+        "tmp_score_codalab": 276.76513671875
+    },
+    {
+        "tmp_score_codalab": 273.856201171875
+    },
+    {
+        "tmp_score_codalab": 261.4501953125
+    },
+    {
+        "tmp_score_codalab": 273.13720703125
+    },
+    {
+        "tmp_score_codalab": 278.0126953125
+    },
+    {
+        "tmp_score_codalab": 269.481201171875
+    },
+    {
+        "tmp_score_codalab": 276.387939453125
+    },
+    {
+        "tmp_score_codalab": 271.24755859375
+    },
+    {
+        "tmp_score_codalab": 279.47021484375
+    },
+    {
+        "tmp_score_codalab": 272.203369140625
+    },
+    {
+        "tmp_score_codalab": 272.183837890625
+    },
+    {
+        "tmp_score_codalab": 271.55029296875
+    },
+    {
+        "tmp_score_codalab": 268.7890625
+    },
+    {
+        "tmp_score_codalab": 266.842041015625
+    },
+    {
+        "tmp_score_codalab": 269.464111328125
+    },
+    {
+        "tmp_score_codalab": 269.830322265625
+    },
+    {
+        "tmp_score_codalab": 264.765625
+    },
+    {
+        "tmp_score_codalab": 262.669677734375
+    },
+    {
+        "tmp_score_codalab": 262.669677734375
+    },
+    {
+        "tmp_score_codalab": 265.673828125
+    },
+    {
+        "tmp_score_codalab": 267.16064453125
+    },
+    {
+        "tmp_score_codalab": 271.767578125
+    },
+    {
+        "tmp_score_codalab": 270.198974609375
+    },
+    {
+        "tmp_score_codalab": 271.490478515625
+    },
+    {
+        "tmp_score_codalab": 271.44287109375
+    },
+    {
+        "tmp_score_codalab": 273.050537109375
+    },
+    {
+        "tmp_score_codalab": 271.571044921875
+    },
+    {
+        "tmp_score_codalab": 277.30224609375
+    },
+    {
+        "tmp_score_codalab": 275.184326171875
+    },
+    {
+        "tmp_score_codalab": 274.466552734375
+    },
+    {
+        "tmp_score_codalab": 272.601318359375
+    },
+    {
+        "tmp_score_codalab": 272.32177734375
+    },
+    {
+        "tmp_score_codalab": 269.749755859375
+    },
+    {
+        "tmp_score_codalab": 265.299072265625
+    },
+    {
+        "tmp_score_codalab": 265.1025390625
+    },
+    {
+        "tmp_score_codalab": 262.890625
+    },
+    {
+        "tmp_score_codalab": 259.197998046875
+    },
+    {
+        "tmp_score_codalab": 262.08740234375
+    },
+    {
+        "tmp_score_codalab": 254.19921875
+    },
+    {
+        "tmp_score_codalab": 252.58056640625
+    },
+    {
+        "tmp_score_codalab": 249.63134765625
+    },
+    {
+        "tmp_score_codalab": 243.409423828125
+    },
+    {
+        "tmp_score_codalab": 242.642822265625
+    },
+    {
+        "tmp_score_codalab": 238.27880859375
+    },
+    {
+        "tmp_score_codalab": 231.6796875
+    },
+    {
+        "tmp_score_codalab": 229.200439453125
+    },
+    {
+        "tmp_score_codalab": 224.019775390625
+    },
+    {
+        "tmp_score_codalab": 218.83544921875
+    },
+    {
+        "tmp_score_codalab": 212.74658203125
+    },
+    {
+        "tmp_score_codalab": 211.043701171875
+    },
+    {
+        "tmp_score_codalab": 206.142578125
+    },
+    {
+        "tmp_score_codalab": 205.499267578125
+    },
+    {
+        "tmp_score_codalab": 200.560302734375
+    },
+    {
+        "tmp_score_codalab": 203.740234375
+    },
+    {
+        "tmp_score_codalab": 193.922119140625
+    },
+    {
+        "tmp_score_codalab": 195.57373046875
+    },
+    {
+        "tmp_score_codalab": 193.64990234375
+    },
+    {
+        "tmp_score_codalab": 189.12841796875
+    },
+    {
+        "tmp_score_codalab": 183.86962890625
+    },
+    {
+        "tmp_score_codalab": 184.99267578125
+    },
+    {
+        "tmp_score_codalab": 177.99072265625
+    },
+    {
+        "tmp_score_codalab": 181.9384765625
+    },
+    {
+        "tmp_score_codalab": 186.85302734375
+    },
+    {
+        "tmp_score_codalab": 181.99951171875
+    },
+    {
+        "tmp_score_codalab": 180.361328125
+    },
+    {
+        "tmp_score_codalab": 181.37451171875
+    },
+    {
+        "tmp_score_codalab": 179.8193359375
+    },
+    {
+        "tmp_score_codalab": 178.97705078125
+    },
+    {
+        "tmp_score_codalab": 178.4423828125
+    },
+    {
+        "tmp_score_codalab": 179.49951171875
+    },
+    {
+        "tmp_score_codalab": 179.47265625
+    },
+    {
+        "tmp_score_codalab": 181.35498046875
+    },
+    {
+        "tmp_score_codalab": 182.59521484375
+    },
+    {
+        "tmp_score_codalab": 179.6923828125
+    },
+    {
+        "tmp_score_codalab": 182.7978515625
+    },
+    {
+        "tmp_score_codalab": 184.2822265625
+    },
+    {
+        "tmp_score_codalab": 187.05322265625
+    },
+    {
+        "tmp_score_codalab": 186.12548828125
+    },
+    {
+        "tmp_score_codalab": 187.20703125
+    },
+    {
+        "tmp_score_codalab": 195.20263671875
+    },
+    {
+        "tmp_score_codalab": 191.1376953125
+    },
+    {
+        "tmp_score_codalab": 186.9287109375
+    },
+    {
+        "tmp_score_codalab": 185.77392578125
+    },
+    {
+        "tmp_score_codalab": 185.9130859375
+    },
+    {
+        "tmp_score_codalab": 186.7822265625
+    },
+    {
+        "tmp_score_codalab": 185.99853515625
+    },
+    {
+        "tmp_score_codalab": 187.73681640625
+    },
+    {
+        "tmp_score_codalab": 184.5751953125
+    },
+    {
+        "tmp_score_codalab": 188.193359375
+    },
+    {
+        "tmp_score_codalab": 186.81884765625
+    },
+    {
+        "tmp_score_codalab": 188.623046875
+    },
+    {
+        "tmp_score_codalab": 180.3759765625
+    },
+    {
+        "tmp_score_codalab": 187.00439453125
+    },
+    {
+        "tmp_score_codalab": 183.203125
+    },
+    {
+        "tmp_score_codalab": 183.798828125
+    },
+    {
+        "tmp_score_codalab": 176.58447265625
+    },
+    {
+        "tmp_score_codalab": 181.85791015625
+    },
+    {
+        "tmp_score_codalab": 175.52490234375
+    },
+    {
+        "tmp_score_codalab": 178.642578125
+    },
+    {
+        "tmp_score_codalab": 174.56298828125
+    },
+    {
+        "tmp_score_codalab": 176.27685546875
+    },
+    {
+        "tmp_score_codalab": 173.87939453125
+    },
+    {
+        "tmp_score_codalab": 183.7890625
+    },
+    {
+        "tmp_score_codalab": 173.63037109375
+    },
+    {
+        "tmp_score_codalab": 172.3583984375
+    },
+    {
+        "tmp_score_codalab": 172.431640625
+    },
+    {
+        "tmp_score_codalab": 173.6669921875
+    },
+    {
+        "tmp_score_codalab": 181.640625
+    },
+    {
+        "tmp_score_codalab": 179.5556640625
+    },
+    {
+        "tmp_score_codalab": 190.2783203125
+    },
+    {
+        "tmp_score_codalab": 191.54052734375
+    },
+    {
+        "tmp_score_codalab": 188.28125
+    },
+    {
+        "tmp_score_codalab": 208.017578125
+    },
+    {
+        "tmp_score_codalab": 188.271484375
+    },
+    {
+        "tmp_score_codalab": 199.42626953125
+    },
+    {
+        "tmp_score_codalab": 203.97216796875
+    },
+    {
+        "tmp_score_codalab": 216.0498046875
+    },
+    {
+        "tmp_score_codalab": 205.78125
+    },
+    {
+        "tmp_score_codalab": 220.9521484375
+    },
+    {
+        "tmp_score_codalab": 209.09423828125
+    },
+    {
+        "tmp_score_codalab": 207.841796875
+    },
+    {
+        "tmp_score_codalab": 198.91845703125
+    },
+    {
+        "tmp_score_codalab": 205.00732421875
+    },
+    {
+        "tmp_score_codalab": 184.84375
+    },
+    {
+        "tmp_score_codalab": 182.87353515625
+    },
+    {
+        "tmp_score_codalab": 173.3740234375
+    },
+    {
+        "tmp_score_codalab": 176.80908203125
+    },
+    {
+        "tmp_score_codalab": 166.13037109375
+    },
+    {
+        "tmp_score_codalab": 160.75439453125
+    },
+    {
+        "tmp_score_codalab": 160.06591796875
+    },
+    {
+        "tmp_score_codalab": 152.67578125
+    },
+    {
+        "tmp_score_codalab": 151.7822265625
+    },
+    {
+        "tmp_score_codalab": 148.38623046875
+    },
+    {
+        "tmp_score_codalab": 145.01953125
+    },
+    {
+        "tmp_score_codalab": 139.72900390625
+    },
+    {
+        "tmp_score_codalab": 137.08984375
+    },
+    {
+        "tmp_score_codalab": 134.2822265625
+    },
+    {
+        "tmp_score_codalab": 131.103515625
+    },
+    {
+        "tmp_score_codalab": 127.21923828125
+    },
+    {
+        "tmp_score_codalab": 124.48974609375
+    },
+    {
+        "tmp_score_codalab": 120.2197265625
+    },
+    {
+        "tmp_score_codalab": 120.3857421875
+    },
+    {
+        "tmp_score_codalab": 116.79443359375
+    },
+    {
+        "tmp_score_codalab": 115.7958984375
+    },
+    {
+        "tmp_score_codalab": 115.92041015625
+    },
+    {
+        "tmp_score_codalab": 114.51904296875
+    },
+    {
+        "tmp_score_codalab": 113.662109375
+    },
+    {
+        "tmp_score_codalab": 113.388671875
+    },
+    {
+        "tmp_score_codalab": 113.6962890625
+    },
+    {
+        "tmp_score_codalab": 114.71923828125
+    },
+    {
+        "tmp_score_codalab": 113.837890625
+    },
+    {
+        "tmp_score_codalab": 110.6982421875
+    },
+    {
+        "tmp_score_codalab": 112.91259765625
+    },
+    {
+        "tmp_score_codalab": 114.072265625
+    },
+    {
+        "tmp_score_codalab": 114.06005859375
+    },
+    {
+        "tmp_score_codalab": 114.64599609375
+    },
+    {
+        "tmp_score_codalab": 114.76318359375
+    },
+    {
+        "tmp_score_codalab": 117.62451171875
+    },
+    {
+        "tmp_score_codalab": 120.5615234375
+    },
+    {
+        "tmp_score_codalab": 121.7578125
+    },
+    {
+        "tmp_score_codalab": 124.75830078125
+    },
+    {
+        "tmp_score_codalab": 127.9541015625
+    },
+    {
+        "tmp_score_codalab": 131.30859375
+    },
+    {
+        "tmp_score_codalab": 133.52783203125
+    },
+    {
+        "tmp_score_codalab": 139.06494140625
+    },
+    {
+        "tmp_score_codalab": 143.60107421875
+    },
+    {
+        "tmp_score_codalab": 149.35791015625
+    },
+    {
+        "tmp_score_codalab": 149.34326171875
+    },
+    {
+        "tmp_score_codalab": 158.72802734375
+    },
+    {
+        "tmp_score_codalab": 170.25634765625
+    },
+    {
+        "tmp_score_codalab": 173.91845703125
+    },
+    {
+        "tmp_score_codalab": 172.40966796875
+    },
+    {
+        "tmp_score_codalab": 196.89453125
+    },
+    {
+        "tmp_score_codalab": 202.265625
+    },
+    {
+        "tmp_score_codalab": 216.4013671875
+    },
+    {
+        "tmp_score_codalab": 225.06103515625
+    },
+    {
+        "tmp_score_codalab": 237.9443359375
+    },
+    {
+        "tmp_score_codalab": 244.0625
+    },
+    {
+        "tmp_score_codalab": 264.69970703125
+    },
+    {
+        "tmp_score_codalab": 270.233154296875
+    },
+    {
+        "tmp_score_codalab": 272.724609375
+    },
+    {
+        "tmp_score_codalab": 299.017333984375
+    },
+    {
+        "tmp_score_codalab": 310.60302734375
+    },
+    {
+        "tmp_score_codalab": 329.68994140625
+    },
+    {
+        "tmp_score_codalab": 352.357177734375
+    },
+    {
+        "tmp_score_codalab": 345.67138671875
+    },
+    {
+        "tmp_score_codalab": 343.377685546875
+    },
+    {
+        "tmp_score_codalab": 365.362548828125
+    },
+    {
+        "tmp_score_codalab": 342.06787109375
+    },
+    {
+        "tmp_score_codalab": 340.44677734375
+    },
+    {
+        "tmp_score_codalab": 323.624267578125
+    },
+    {
+        "tmp_score_codalab": 304.19921875
+    },
+    {
+        "tmp_score_codalab": 289.608154296875
+    },
+    {
+        "tmp_score_codalab": 281.337890625
+    },
+    {
+        "tmp_score_codalab": 275.80078125
+    },
+    {
+        "tmp_score_codalab": 275.49072265625
+    },
+    {
+        "tmp_score_codalab": 273.37890625
+    },
+    {
+        "tmp_score_codalab": 272.259521484375
+    },
+    {
+        "tmp_score_codalab": 267.8076171875
+    },
+    {
+        "tmp_score_codalab": 268.802490234375
+    },
+    {
+        "tmp_score_codalab": 281.82861328125
+    },
+    {
+        "tmp_score_codalab": 282.481689453125
+    },
+    {
+        "tmp_score_codalab": 284.16015625
+    },
+    {
+        "tmp_score_codalab": 272.254638671875
+    },
+    {
+        "tmp_score_codalab": 278.70849609375
+    },
+    {
+        "tmp_score_codalab": 267.830810546875
+    },
+    {
+        "tmp_score_codalab": 263.93310546875
+    },
+    {
+        "tmp_score_codalab": 255.965576171875
+    },
+    {
+        "tmp_score_codalab": 247.955322265625
+    },
+    {
+        "tmp_score_codalab": 257.933349609375
+    },
+    {
+        "tmp_score_codalab": 258.436279296875
+    },
+    {
+        "tmp_score_codalab": 267.5634765625
+    },
+    {
+        "tmp_score_codalab": 271.95556640625
+    },
+    {
+        "tmp_score_codalab": 260.76171875
+    },
+    {
+        "tmp_score_codalab": 263.189697265625
+    },
+    {
+        "tmp_score_codalab": 267.825927734375
+    },
+    {
+        "tmp_score_codalab": 265.1318359375
+    },
+    {
+        "tmp_score_codalab": 258.67431640625
+    },
+    {
+        "tmp_score_codalab": 264.94384765625
+    },
+    {
+        "tmp_score_codalab": 257.821044921875
+    },
+    {
+        "tmp_score_codalab": 245.146484375
+    },
+    {
+        "tmp_score_codalab": 240.418701171875
+    },
+    {
+        "tmp_score_codalab": 231.605224609375
+    },
+    {
+        "tmp_score_codalab": 235.47119140625
+    },
+    {
+        "tmp_score_codalab": 244.70947265625
+    },
+    {
+        "tmp_score_codalab": 242.493896484375
+    },
+    {
+        "tmp_score_codalab": 244.847412109375
+    },
+    {
+        "tmp_score_codalab": 238.543701171875
+    },
+    {
+        "tmp_score_codalab": 240.56396484375
+    },
+    {
+        "tmp_score_codalab": 243.333740234375
+    },
+    {
+        "tmp_score_codalab": 245.400390625
+    },
+    {
+        "tmp_score_codalab": 238.6865234375
+    },
+    {
+        "tmp_score_codalab": 244.591064453125
+    },
+    {
+        "tmp_score_codalab": 257.03369140625
+    },
+    {
+        "tmp_score_codalab": 265.821533203125
+    },
+    {
+        "tmp_score_codalab": 273.7939453125
+    },
+    {
+        "tmp_score_codalab": 283.14697265625
+    },
+    {
+        "tmp_score_codalab": 273.848876953125
+    },
+    {
+        "tmp_score_codalab": 277.67822265625
+    },
+    {
+        "tmp_score_codalab": 277.679443359375
+    },
+    {
+        "tmp_score_codalab": 291.331787109375
+    },
+    {
+        "tmp_score_codalab": 301.270751953125
+    },
+    {
+        "tmp_score_codalab": 310.9326171875
+    },
+    {
+        "tmp_score_codalab": 300.5224609375
+    },
+    {
+        "tmp_score_codalab": 293.26416015625
+    },
+    {
+        "tmp_score_codalab": 279.12353515625
+    },
+    {
+        "tmp_score_codalab": 293.876953125
+    },
+    {
+        "tmp_score_codalab": 301.416015625
+    },
+    {
+        "tmp_score_codalab": 323.1591796875
+    },
+    {
+        "tmp_score_codalab": 320.7177734375
+    },
+    {
+        "tmp_score_codalab": 317.21923828125
+    },
+    {
+        "tmp_score_codalab": 316.883544921875
+    },
+    {
+        "tmp_score_codalab": 315.284423828125
+    },
+    {
+        "tmp_score_codalab": 319.232177734375
+    },
+    {
+        "tmp_score_codalab": 326.8017578125
+    },
+    {
+        "tmp_score_codalab": 328.5009765625
+    },
+    {
+        "tmp_score_codalab": 322.750244140625
+    },
+    {
+        "tmp_score_codalab": 310.8154296875
+    },
+    {
+        "tmp_score_codalab": 313.948974609375
+    },
+    {
+        "tmp_score_codalab": 325.838623046875
+    },
+    {
+        "tmp_score_codalab": 314.495849609375
+    },
+    {
+        "tmp_score_codalab": 325.625
+    },
+    {
+        "tmp_score_codalab": 335.716552734375
+    },
+    {
+        "tmp_score_codalab": 345.28076171875
+    },
+    {
+        "tmp_score_codalab": 358.7890625
+    },
+    {
+        "tmp_score_codalab": 364.96826171875
+    },
+    {
+        "tmp_score_codalab": 364.25048828125
+    },
+    {
+        "tmp_score_codalab": 343.763427734375
+    },
+    {
+        "tmp_score_codalab": 350.01220703125
+    },
+    {
+        "tmp_score_codalab": 353.197021484375
+    },
+    {
+        "tmp_score_codalab": 361.549072265625
+    },
+    {
+        "tmp_score_codalab": 345.6787109375
+    },
+    {
+        "tmp_score_codalab": 347.366943359375
+    },
+    {
+        "tmp_score_codalab": 341.83349609375
+    },
+    {
+        "tmp_score_codalab": 334.251708984375
+    },
+    {
+        "tmp_score_codalab": 337.9150390625
+    },
+    {
+        "tmp_score_codalab": 344.144287109375
+    },
+    {
+        "tmp_score_codalab": 342.613525390625
+    },
+    {
+        "tmp_score_codalab": 338.458251953125
+    },
+    {
+        "tmp_score_codalab": 313.46923828125
+    },
+    {
+        "tmp_score_codalab": 292.763671875
+    },
+    {
+        "tmp_score_codalab": 278.245849609375
+    },
+    {
+        "tmp_score_codalab": 275.2294921875
+    },
+    {
+        "tmp_score_codalab": 282.890625
+    },
+    {
+        "tmp_score_codalab": 262.081298828125
+    },
+    {
+        "tmp_score_codalab": 263.948974609375
+    },
+    {
+        "tmp_score_codalab": 247.376708984375
+    },
+    {
+        "tmp_score_codalab": 240.264892578125
+    },
+    {
+        "tmp_score_codalab": 248.878173828125
+    },
+    {
+        "tmp_score_codalab": 260.711669921875
+    },
+    {
+        "tmp_score_codalab": 266.444091796875
+    },
+    {
+        "tmp_score_codalab": 277.586669921875
+    },
+    {
+        "tmp_score_codalab": 259.59228515625
+    },
+    {
+        "tmp_score_codalab": 260.692138671875
+    },
+    {
+        "tmp_score_codalab": 251.2109375
+    },
+    {
+        "tmp_score_codalab": 243.365478515625
+    },
+    {
+        "tmp_score_codalab": 256.676025390625
+    },
+    {
+        "tmp_score_codalab": 249.803466796875
+    },
+    {
+        "tmp_score_codalab": 255.94482421875
+    },
+    {
+        "tmp_score_codalab": 255.8935546875
+    },
+    {
+        "tmp_score_codalab": 254.925537109375
+    },
+    {
+        "tmp_score_codalab": 243.336181640625
+    },
+    {
+        "tmp_score_codalab": 242.25341796875
+    },
+    {
+        "tmp_score_codalab": 245.804443359375
+    },
+    {
+        "tmp_score_codalab": 253.43017578125
+    },
+    {
+        "tmp_score_codalab": 250.906982421875
+    },
+    {
+        "tmp_score_codalab": 242.613525390625
+    },
+    {
+        "tmp_score_codalab": 246.76513671875
+    },
+    {
+        "tmp_score_codalab": 246.69677734375
+    },
+    {
+        "tmp_score_codalab": 267.674560546875
+    },
+    {
+        "tmp_score_codalab": 273.922119140625
+    },
+    {
+        "tmp_score_codalab": 283.282470703125
+    },
+    {
+        "tmp_score_codalab": 282.46826171875
+    },
+    {
+        "tmp_score_codalab": 290.07568359375
+    },
+    {
+        "tmp_score_codalab": 281.32568359375
+    },
+    {
+        "tmp_score_codalab": 276.87744140625
+    },
+    {
+        "tmp_score_codalab": 266.207275390625
+    },
+    {
+        "tmp_score_codalab": 259.42626953125
+    },
+    {
+        "tmp_score_codalab": 252.2314453125
+    },
+    {
+        "tmp_score_codalab": 258.42041015625
+    },
+    {
+        "tmp_score_codalab": 258.8427734375
+    },
+    {
+        "tmp_score_codalab": 270.85205078125
+    },
+    {
+        "tmp_score_codalab": 279.6484375
+    },
+    {
+        "tmp_score_codalab": 279.73388671875
+    },
+    {
+        "tmp_score_codalab": 283.58642578125
+    },
+    {
+        "tmp_score_codalab": 282.7490234375
+    },
+    {
+        "tmp_score_codalab": 282.17041015625
+    },
+    {
+        "tmp_score_codalab": 307.8564453125
+    },
+    {
+        "tmp_score_codalab": 309.70458984375
+    },
+    {
+        "tmp_score_codalab": 327.1728515625
+    },
+    {
+        "tmp_score_codalab": 314.98291015625
+    },
+    {
+        "tmp_score_codalab": 297.16796875
+    },
+    {
+        "tmp_score_codalab": 301.708984375
+    },
+    {
+        "tmp_score_codalab": 280.67626953125
+    },
+    {
+        "tmp_score_codalab": 266.68212890625
+    },
+    {
+        "tmp_score_codalab": 275.9033203125
+    },
+    {
+        "tmp_score_codalab": 286.3427734375
+    },
+    {
+        "tmp_score_codalab": 271.13037109375
+    },
+    {
+        "tmp_score_codalab": 263.85009765625
+    },
+    {
+        "tmp_score_codalab": 276.64306640625
+    },
+    {
+        "tmp_score_codalab": 294.5458984375
+    },
+    {
+        "tmp_score_codalab": 280.4296875
+    },
+    {
+        "tmp_score_codalab": 303.056640625
+    },
+    {
+        "tmp_score_codalab": 299.5458984375
+    },
+    {
+        "tmp_score_codalab": 278.92822265625
+    },
+    {
+        "tmp_score_codalab": 254.53857421875
+    },
+    {
+        "tmp_score_codalab": 272.99560546875
+    },
+    {
+        "tmp_score_codalab": 271.90185546875
+    },
+    {
+        "tmp_score_codalab": 287.0751953125
+    },
+    {
+        "tmp_score_codalab": 295.7373046875
+    },
+    {
+        "tmp_score_codalab": 276.7919921875
+    },
+    {
+        "tmp_score_codalab": 291.00830078125
+    },
+    {
+        "tmp_score_codalab": 256.76025390625
+    },
+    {
+        "tmp_score_codalab": 224.9560546875
+    },
+    {
+        "tmp_score_codalab": 199.833984375
+    },
+    {
+        "tmp_score_codalab": 206.49658203125
+    },
+    {
+        "tmp_score_codalab": 194.93408203125
+    },
+    {
+        "tmp_score_codalab": 215.087890625
+    },
+    {
+        "tmp_score_codalab": 203.359375
+    },
+    {
+        "tmp_score_codalab": 222.94921875
+    },
+    {
+        "tmp_score_codalab": 209.86328125
+    },
+    {
+        "tmp_score_codalab": 198.62060546875
+    },
+    {
+        "tmp_score_codalab": 193.89892578125
+    },
+    {
+        "tmp_score_codalab": 171.76025390625
+    },
+    {
+        "tmp_score_codalab": 161.77001953125
+    },
+    {
+        "tmp_score_codalab": 151.97021484375
+    },
+    {
+        "tmp_score_codalab": 159.02099609375
+    },
+    {
+        "tmp_score_codalab": 154.79736328125
+    },
+    {
+        "tmp_score_codalab": 148.60595703125
+    },
+    {
+        "tmp_score_codalab": 155.24169921875
+    },
+    {
+        "tmp_score_codalab": 153.359375
+    },
+    {
+        "tmp_score_codalab": 160.65185546875
+    },
+    {
+        "tmp_score_codalab": 170.6884765625
+    },
+    {
+        "tmp_score_codalab": 170.9033203125
+    },
+    {
+        "tmp_score_codalab": 182.89794921875
+    },
+    {
+        "tmp_score_codalab": 192.75390625
+    },
+    {
+        "tmp_score_codalab": 191.8359375
+    },
+    {
+        "tmp_score_codalab": 197.7587890625
+    },
+    {
+        "tmp_score_codalab": 188.11279296875
+    },
+    {
+        "tmp_score_codalab": 193.73046875
+    },
+    {
+        "tmp_score_codalab": 194.27001953125
+    },
+    {
+        "tmp_score_codalab": 207.1533203125
+    },
+    {
+        "tmp_score_codalab": 223.876953125
+    },
+    {
+        "tmp_score_codalab": 218.1591796875
+    },
+    {
+        "tmp_score_codalab": 197.6220703125
+    },
+    {
+        "tmp_score_codalab": 195.2587890625
+    },
+    {
+        "tmp_score_codalab": 192.2265625
+    },
+    {
+        "tmp_score_codalab": 197.6708984375
+    },
+    {
+        "tmp_score_codalab": 183.59619140625
+    },
+    {
+        "tmp_score_codalab": 185.1123046875
+    },
+    {
+        "tmp_score_codalab": 178.72314453125
+    },
+    {
+        "tmp_score_codalab": 178.876953125
+    },
+    {
+        "tmp_score_codalab": 182.3486328125
+    },
+    {
+        "tmp_score_codalab": 189.931640625
+    },
+    {
+        "tmp_score_codalab": 192.5341796875
+    },
+    {
+        "tmp_score_codalab": 179.91455078125
+    },
+    {
+        "tmp_score_codalab": 171.43310546875
+    },
+    {
+        "tmp_score_codalab": 155.5224609375
+    },
+    {
+        "tmp_score_codalab": 139.83642578125
+    },
+    {
+        "tmp_score_codalab": 131.0595703125
+    },
+    {
+        "tmp_score_codalab": 122.978515625
+    },
+    {
+        "tmp_score_codalab": 125.02197265625
+    },
+    {
+        "tmp_score_codalab": 120.908203125
+    },
+    {
+        "tmp_score_codalab": 119.3896484375
+    },
+    {
+        "tmp_score_codalab": 128.68896484375
+    },
+    {
+        "tmp_score_codalab": 138.18603515625
+    },
+    {
+        "tmp_score_codalab": 143.7548828125
+    },
+    {
+        "tmp_score_codalab": 131.81640625
+    },
+    {
+        "tmp_score_codalab": 138.349609375
+    },
+    {
+        "tmp_score_codalab": 127.34130859375
+    },
+    {
+        "tmp_score_codalab": 127.23876953125
+    },
+    {
+        "tmp_score_codalab": 120.54443359375
+    },
+    {
+        "tmp_score_codalab": 116.00341796875
+    },
+    {
+        "tmp_score_codalab": 115.31005859375
+    },
+    {
+        "tmp_score_codalab": 116.6162109375
+    },
+    {
+        "tmp_score_codalab": 127.255859375
+    },
+    {
+        "tmp_score_codalab": 138.251953125
+    },
+    {
+        "tmp_score_codalab": 143.97705078125
+    },
+    {
+        "tmp_score_codalab": 142.26318359375
+    },
+    {
+        "tmp_score_codalab": 150.2197265625
+    },
+    {
+        "tmp_score_codalab": 145.556640625
+    },
+    {
+        "tmp_score_codalab": 156.77001953125
+    },
+    {
+        "tmp_score_codalab": 143.4130859375
+    },
+    {
+        "tmp_score_codalab": 143.50830078125
+    },
+    {
+        "tmp_score_codalab": 148.9501953125
+    },
+    {
+        "tmp_score_codalab": 151.9287109375
+    },
+    {
+        "tmp_score_codalab": 146.1083984375
+    },
+    {
+        "tmp_score_codalab": 148.11279296875
+    },
+    {
+        "tmp_score_codalab": 153.7890625
+    },
+    {
+        "tmp_score_codalab": 146.53076171875
+    },
+    {
+        "tmp_score_codalab": 159.22119140625
+    },
+    {
+        "tmp_score_codalab": 153.4912109375
+    },
+    {
+        "tmp_score_codalab": 159.931640625
+    },
+    {
+        "tmp_score_codalab": 174.794921875
+    },
+    {
+        "tmp_score_codalab": 183.2666015625
+    },
+    {
+        "tmp_score_codalab": 171.318359375
+    },
+    {
+        "tmp_score_codalab": 168.2080078125
+    },
+    {
+        "tmp_score_codalab": 196.95556640625
+    },
+    {
+        "tmp_score_codalab": 198.0908203125
+    },
+    {
+        "tmp_score_codalab": 229.453125
+    },
+    {
+        "tmp_score_codalab": 223.6474609375
+    },
+    {
+        "tmp_score_codalab": 215.205078125
+    },
+    {
+        "tmp_score_codalab": 233.90869140625
+    },
+    {
+        "tmp_score_codalab": 234.31640625
+    },
+    {
+        "tmp_score_codalab": 252.39501953125
+    },
+    {
+        "tmp_score_codalab": 252.0947265625
+    },
+    {
+        "tmp_score_codalab": 246.5673828125
+    },
+    {
+        "tmp_score_codalab": 233.46435546875
+    },
+    {
+        "tmp_score_codalab": 215.9033203125
+    },
+    {
+        "tmp_score_codalab": 202.548828125
+    },
+    {
+        "tmp_score_codalab": 195.1708984375
+    },
+    {
+        "tmp_score_codalab": 196.1962890625
+    },
+    {
+        "tmp_score_codalab": 213.33251953125
+    },
+    {
+        "tmp_score_codalab": 201.8017578125
+    },
+    {
+        "tmp_score_codalab": 206.27197265625
+    },
+    {
+        "tmp_score_codalab": 210.52734375
+    },
+    {
+        "tmp_score_codalab": 217.15087890625
+    },
+    {
+        "tmp_score_codalab": 227.7197265625
+    },
+    {
+        "tmp_score_codalab": 232.8466796875
+    },
+    {
+        "tmp_score_codalab": 233.154296875
+    },
+    {
+        "tmp_score_codalab": 244.23583984375
+    },
+    {
+        "tmp_score_codalab": 259.4970703125
+    },
+    {
+        "tmp_score_codalab": 284.42138671875
+    },
+    {
+        "tmp_score_codalab": 305.6884765625
+    },
+    {
+        "tmp_score_codalab": 330.33203125
+    },
+    {
+        "tmp_score_codalab": 346.23779296875
+    },
+    {
+        "tmp_score_codalab": 368.11279296875
+    },
+    {
+        "tmp_score_codalab": 389.8974609375
+    },
+    {
+        "tmp_score_codalab": 394.30908203125
+    },
+    {
+        "tmp_score_codalab": 404.1943359375
+    },
+    {
+        "tmp_score_codalab": 407.62451171875
+    },
+    {
+        "tmp_score_codalab": 402.88818359375
+    },
+    {
+        "tmp_score_codalab": 413.1982421875
+    },
+    {
+        "tmp_score_codalab": 427.7490234375
+    },
+    {
+        "tmp_score_codalab": 411.19384765625
+    },
+    {
+        "tmp_score_codalab": 423.84033203125
+    },
+    {
+        "tmp_score_codalab": 417.5830078125
+    },
+    {
+        "tmp_score_codalab": 399.990234375
+    },
+    {
+        "tmp_score_codalab": 408.08349609375
+    },
+    {
+        "tmp_score_codalab": 424.8291015625
+    },
+    {
+        "tmp_score_codalab": 444.93408203125
+    },
+    {
+        "tmp_score_codalab": 460.39794921875
+    },
+    {
+        "tmp_score_codalab": 452.92724609375
+    },
+    {
+        "tmp_score_codalab": 437.6806640625
+    },
+    {
+        "tmp_score_codalab": 446.884765625
+    },
+    {
+        "tmp_score_codalab": 461.0693359375
+    },
+    {
+        "tmp_score_codalab": 448.489990234375
+    },
+    {
+        "tmp_score_codalab": 472.4072265625
+    },
+    {
+        "tmp_score_codalab": 484.6875
+    },
+    {
+        "tmp_score_codalab": 492.5732421875
+    },
+    {
+        "tmp_score_codalab": 476.845703125
+    },
+    {
+        "tmp_score_codalab": 484.84375
+    },
+    {
+        "tmp_score_codalab": 497.890625
+    },
+    {
+        "tmp_score_codalab": 516.75537109375
+    },
+    {
+        "tmp_score_codalab": 513.720703125
+    },
+    {
+        "tmp_score_codalab": 506.98486328125
+    },
+    {
+        "tmp_score_codalab": 500.771484375
+    },
+    {
+        "tmp_score_codalab": 517.04345703125
+    },
+    {
+        "tmp_score_codalab": 499.5947265625
+    },
+    {
+        "tmp_score_codalab": 492.998046875
+    },
+    {
+        "tmp_score_codalab": 451.18408203125
+    },
+    {
+        "tmp_score_codalab": 445.0537109375
+    },
+    {
+        "tmp_score_codalab": 472.4072265625
+    },
+    {
+        "tmp_score_codalab": 468.02490234375
+    },
+    {
+        "tmp_score_codalab": 458.4228515625
+    },
+    {
+        "tmp_score_codalab": 475.185546875
+    },
+    {
+        "tmp_score_codalab": 463.79638671875
+    },
+    {
+        "tmp_score_codalab": 470.07568359375
+    },
+    {
+        "tmp_score_codalab": 430.35400390625
+    },
+    {
+        "tmp_score_codalab": 400.0439453125
+    },
+    {
+        "tmp_score_codalab": 378.43017578125
+    },
+    {
+        "tmp_score_codalab": 372.5537109375
+    },
+    {
+        "tmp_score_codalab": 343.86474609375
+    },
+    {
+        "tmp_score_codalab": 322.79052734375
+    },
+    {
+        "tmp_score_codalab": 330.52001953125
+    },
+    {
+        "tmp_score_codalab": 326.34765625
+    },
+    {
+        "tmp_score_codalab": 336.768798828125
+    },
+    {
+        "tmp_score_codalab": 334.8681640625
+    },
+    {
+        "tmp_score_codalab": 338.297119140625
+    },
+    {
+        "tmp_score_codalab": 337.99072265625
+    },
+    {
+        "tmp_score_codalab": 340.72998046875
+    },
+    {
+        "tmp_score_codalab": 349.6240234375
+    },
+    {
+        "tmp_score_codalab": 353.28125
+    },
+    {
+        "tmp_score_codalab": 367.58544921875
+    },
+    {
+        "tmp_score_codalab": 400.9619140625
+    },
+    {
+        "tmp_score_codalab": 421.015625
+    },
+    {
+        "tmp_score_codalab": 434.13818359375
+    },
+    {
+        "tmp_score_codalab": 454.4970703125
+    },
+    {
+        "tmp_score_codalab": 445.53466796875
+    },
+    {
+        "tmp_score_codalab": 425.89599609375
+    },
+    {
+        "tmp_score_codalab": 405.32958984375
+    },
+    {
+        "tmp_score_codalab": 396.3525390625
+    },
+    {
+        "tmp_score_codalab": 399.83154296875
+    },
+    {
+        "tmp_score_codalab": 400.44677734375
+    },
+    {
+        "tmp_score_codalab": 367.2265625
+    },
+    {
+        "tmp_score_codalab": 357.919921875
+    }
+]

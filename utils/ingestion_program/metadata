@@ -1,0 +1,2 @@
+command: python $ingestion_program/ingestion.py --dataset_path $input --output_path $output --program_path $ingestion_program --submission_path $submission_program --key_score grid_operation_cost
+description: Example competition code submission.
