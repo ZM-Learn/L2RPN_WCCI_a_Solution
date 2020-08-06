@@ -31,7 +31,7 @@ The test results on local datasets will be shown in "\results\results.html".
 
 Compared with the submitted agent, it seems that the performance of agent can be further improved with more iterations:
 
-![Image text]\results\Results.png
+![Image text](https://github.com/ZM4PESFC/L2RPN_WCCI_Possible_Solution/blob/master/results/Results.png)
 
 ### Try other actions
 The actions of our agent include randomly selected topology action (line swithching, substation bus bar connection) and generation redispatch. Due to strict ramping limits, all actions are recongised as discretized actions. If you would like to try other selection of action space, you can change the file "Data_structure_process.py" and run:
