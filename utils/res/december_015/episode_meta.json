@@ -2,9 +2,9 @@
     "backend_type": "PandaPowerBackend_l2rpn_data_l2rpn_data",
     "chronics_max_timestep": "864",
     "chronics_path": "D:\\Work\\l2rpn_wcci_zm\\l2rpn_data\\chronics\\december_015",
-    "cumulative_reward": 37568.52734375,
+    "cumulative_reward": 39894.875,
     "env_seed": null,
     "env_type": "Environment_l2rpn_data",
     "grid_path": "D:\\Work\\l2rpn_wcci_zm\\l2rpn_data\\grid.json",
-    "nb_timestep_played": 810
+    "nb_timestep_played": 864
 }

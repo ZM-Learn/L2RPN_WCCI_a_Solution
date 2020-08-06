@@ -204,10 +204,6 @@ if __name__ == '__main__':
         selected_actions = np.column_stack((selected_actions, added_select_action))
 
     
-
-    
-    
-    
     # 1 st NN: determine the topology
     # 2 nd OPF: determine redispatch decision
     # Add generation redispatch: t
