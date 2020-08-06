@@ -29,7 +29,7 @@ python make_submission_file.py
 ```
 The test results on local datasets will be shown in "\results\results.html".
 
-Compared with the submitted agent, it seems that the performance of agent can be further improved with more iterations:
+Compared with the submitted agent, it seems that the performance of the agent can be further improved with more iterations:
 
 ![Image text](https://github.com/ZM4PESFC/L2RPN_WCCI_Possible_Solution/blob/master/results/Results.png)
 
