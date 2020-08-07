@@ -3,7 +3,8 @@ Learning to Run a Power Network WCCI 2020 Competition - One possible solution
 # L2RPN WCCI 2020 Competition
 This is a repository for L2RPN WCCI 2020 Competition during **_June 2020 - July 2020_**. The RL agent based on this repository is ranked 3rd in the competition.
 
-https://l2rpn.chalearn.org/
+https://l2rpn.chalearn.org
+
 https://competitions.codalab.org/competitions/24902#learn_the_details
 
 ## Summary
