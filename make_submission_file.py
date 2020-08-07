@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jun  6 10:07:11 2020
-
-@author: yanzm
-"""
 
 from check_your_submission import main as test_submission
 import time
