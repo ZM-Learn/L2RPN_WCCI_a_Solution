@@ -7,6 +7,10 @@ https://l2rpn.chalearn.org
 
 https://competitions.codalab.org/competitions/24902#learn_the_details
 
+The baseline provided by RTE-France can be found in:
+
+https://github.com/rte-france/l2rpn-baselines
+
 ## Summary
 The goal for L2RPN WCCI competition is to train an agent that will be able to learn a policy that could overcome obstacles, such as congestions, while optimizing the overall operation cost. The operation cost to be minimized includes powerlines losses, redispatch cost and blackout cost. The participants are encouraged to operate the grid for as long as possible, and will be penalized for a blackout even after the game is over. Load/RES fluctuations, line matainance and hazards are also considered by the competition.
 
@@ -47,6 +51,8 @@ To train the agent, run:
 python Train_Agent_discrete.py
 ```
 You may try out other tricks for training the agent (experience replay for critic NN, forced exploration, security verification during training, other setting of hyperparameters), these codes are annotated for your reference. The proposed agent was trained with different strategies (based on NN parameters of previous training process).
+
+You may try other setting of hyperparameters (the employed parameters are inside Train_Agent_discrete.py). Normally, the critic can have larger learning rate than the actor.
 
 ## License
 This Source Code is subject to the terms of the GNU Lesser General Public License v3.0. If a copy of the LGPL-v3 was not distributed with this file, You can obtain one at https://www.gnu.org/licenses/lgpl-3.0.html.
