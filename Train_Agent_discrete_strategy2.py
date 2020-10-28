@@ -249,8 +249,6 @@ class Agent(threading.Thread):
                         state_obs.rho > 1]) # # penalizing lines close to the limit
                    
                     score += (reward-over_current)
-                    if score<-10:
-                        score = -10
                         
                     self.memory( self.get_usable_observation(state), action, score)
                     #print('power deficiency: ', np.sum(state.prod_p)-np.sum(state.load_p))
